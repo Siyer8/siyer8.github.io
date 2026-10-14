@@ -35,7 +35,7 @@
 
     <section class="metrics" aria-label="Portfolio highlights">
       <div><strong>14.8 m/s</strong><span>measured wind-tunnel velocity</span></div>
-      <div><strong>3×</strong><span>faster CAD iteration through automation</span></div>
+      <div><strong>CAD</strong><span>parametric design automation</span></div>
       <div><strong>7</strong><span>projects spanning hardware and software</span></div>
     </section>
 
@@ -53,6 +53,7 @@
           </div>
           <p class="project-summary">Designed, fabricated, and instrumented a compact wind tunnel for airflow testing.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>Undergraduate research at WPI with Prof. Mehdi Mortazavi, focused on building and instrumenting an open-circuit wind tunnel for airflow testing.</p></div><div><h4>My role</h4><p>I developed the tunnel geometry and modular CAD assembly, built the fan-control test rig, and carried out airflow measurements.</p></div></div>
         <div class="gallery gallery-wind">
           <button class="image-card" data-image="assets/wind-5976.jpg" data-caption="Completed wind tunnel on the optical table">
             <img src="assets/wind-5976.jpg" alt="Original photograph of the completed wind tunnel in the laboratory">
@@ -75,21 +76,10 @@
             <span>Velocity graph · reconstructed</span>
           </button>
         </div>
-        <div class="project-details">
-          <div>
-            <h4>Scope</h4>
-            <p>Independently developed the tunnel geometry, modular CAD, fan-control test rig, and measurement workflow.</p>
-          </div>
-          <div>
-            <h4>Engineering</h4>
-            <p>Calculated the flow path from pressure and velocity requirements, built an interrupt-driven PWM/RPM test setup, and verified performance using an ATS thermal-anemometer system.</p>
-          </div>
-          <div>
-            <h4>Result</h4>
-            <p>Recorded a peak air velocity of 14.8 m/s with the completed, fully functional wind tunnel. <a href="assets/wind-data.jpg" target="_blank" rel="noopener">View original measurement photo</a>.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I built &amp; how</h4><p>I translated pressure and velocity requirements into a flow path, fabricated the tunnel, and used PWM control with interrupt-driven tachometer measurements to characterize fan RPM response.</p></div><div><h4>Why this approach</h4><p>The test rig connects fan commands to measured RPM; the ATS thermal-anemometer measurements then check the airflow the assembled tunnel actually produces. This makes physical measurements part of the design process.</p></div><div><h4>Outcome &amp; evidence</h4><p>The completed tunnel produced a measured air velocity of 14.8 m/s. The gallery pairs CAD with the physical build and measurement evidence. The reconstructed graph is illustrative; the original measurement photograph is linked below.</p></div></div>
+<p class="evidence-link"><a href="assets/wind-data.jpg" target="_blank" rel="noopener">View the original airflow measurement photograph ↗</a></p>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="engine">
         <div class="project-head">
@@ -97,8 +87,9 @@
             <p class="project-number">02 / Machining</p>
             <h3>Single-Piston Engine</h3>
           </div>
-          <p class="project-summary">A functional engine machined and assembled after simulating its toolpaths in Mastercam.</p>
+          <p class="project-summary">From steel and aluminum stock to a functional engine, with hands-on machining and CAM verification.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A hands-on machining project completed in March–May 2025, turning steel and aluminum stock into a functional single-piston engine.</p></div><div><h4>My role</h4><p>I machined the components and assembled the engine, using a manual mill, lathe, and drill press. I also created and verified machining toolpaths in Mastercam.</p></div></div>
         <div class="gallery gallery-engine">
           <button class="image-card hero-card" data-image="assets/engine-complete.jpg" data-caption="Completed single-piston engine">
             <img src="assets/engine-complete.jpg" alt="Completed machined single-piston engine">
@@ -117,17 +108,9 @@
             <span>CAM planning</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Process</h4>
-            <p>Machined mating steel and aluminum parts using manual mills, lathes, and drill presses while working to assembly fits and tolerances.</p>
-          </div>
-          <div>
-            <h4>Verification</h4>
-            <p>Created and simulated Mastercam toolpaths to check cutting operations, identify potential collisions, and refine the manufacturing sequence before machining.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I built &amp; how</h4><p>The work moved from individual parts to a complete assembly. Mastercam simulations provided a way to inspect cutting operations and potential collisions; the photographed base and completed engine show the fabrication work.</p></div><div><h4>Why these details matter</h4><p>Mating parts need to fit together for the mechanism to function. Working through both machining and assembly connected individual part geometry to the behavior of the complete engine.</p></div><div><h4>Outcome &amp; evidence</h4><p>Completed a functional single-piston engine. The gallery shows the finished assembly, a machined component, and CAM planning. No speed, power, or efficiency claim is made without a measured test result.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="jarvis">
         <div class="project-head">
@@ -137,6 +120,7 @@
           </div>
           <p class="project-summary">A locally run workspace for technical questions, project notes, and CAD/code workflows.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A local software project developed to support engineering questions, project notes, and CAD/code workflows, with hardware integration for sensor queries.</p></div><div><h4>My role</h4><p>I developed the assistant in Python and Streamlit, integrating Ollama, ChromaDB, and Arduino serial communication.</p></div></div>
         <div class="gallery gallery-jarvis">
           <button class="image-card hero-card" data-image="assets/jarvis-home.png" data-caption="Local model selection and project workspace">
             <img src="assets/jarvis-home.png" alt="Jarvis local engineering assistant home screen with model and mode selection">
@@ -147,17 +131,9 @@
             <span>CAD + code mode</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Architecture</h4>
-            <p>Built in Python and Streamlit with Ollama for on-device inference, ChromaDB for retrieval, and automatic routing between project, advice, and CAD/code modes.</p>
-          </div>
-          <div>
-            <h4>Workflow</h4>
-            <p>Supports file uploads, searchable chat history, selectable local models, persistent project notes, and cited retrieval from indexed engineering documents.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I built &amp; how</h4><p>The workspace supports local model selection, document retrieval, persistent project notes, chat history, and routing between project, advice, and CAD/code modes. Arduino integration enables real-time sensor tool calls.</p></div><div><h4>Why this architecture</h4><p>Local inference allows models to run on the device. Document retrieval brings engineering reference material into the workflow, while serial integration gives the assistant a path to physical sensor readings.</p></div><div><h4>Outcome &amp; evidence</h4><p>Built a locally run assistant. The screenshots show the workspace and a CAD/code interaction; they document the interface, rather than establish a benchmark for model accuracy or hardware reliability.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="steering">
         <div class="project-head">
@@ -167,6 +143,7 @@
           </div>
           <p class="project-summary">An early concept translating driver-interface and packaging requirements into a CAD assembly.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A May 2025 steering-wheel concept for the WPI Formula SAE car, exploring how driver controls and a display could fit within the cockpit.</p></div><div><h4>My role</h4><p>I developed the CAD concept in Onshape and evaluated control placement, grip geometry, driver visibility, and rear packaging.</p></div></div>
         <div class="gallery gallery-steering">
           <button class="image-card hero-card" data-image="assets/steering-front.png" data-caption="Onshape steering-wheel assembly">
             <img src="assets/steering-front.png" alt="Front three-quarter view of an FSAE steering wheel CAD assembly">
@@ -177,17 +154,9 @@
             <span>Requirements</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Constraints</h4>
-            <p>Explored a 6 × 11-inch package with cockpit clearance, driver visibility, an onboard display, four buttons, two dials, paddle shifters, and a commercial quick release.</p>
-          </div>
-          <div>
-            <h4>Design focus</h4>
-            <p>Evaluated control placement, screen visibility, grip geometry, and rear packaging in Onshape as a concept for future vehicle integration.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>Constraints &amp; process</h4><p>The concept explored a 6 × 11-inch package with a display, four buttons, two dials, paddle shifters, and a commercial quick release. The requirements image and assembly show how these elements were considered together.</p></div><div><h4>Why these choices matter</h4><p>Controls must be reachable while the display remains visible, and the rear components must fit the available space. Looking at the full assembly helps expose conflicts between driver interaction and packaging.</p></div><div><h4>Outcome &amp; next step</h4><p>Produced an early CAD concept for potential vehicle integration. It is not presented as an installed or track-tested component. Physical fit and driver evaluation would be needed before progressing to a vehicle-ready design.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="wbla">
         <div class="project-head">
@@ -197,6 +166,7 @@
           </div>
           <p class="project-summary">A converted-bus layout developed for an after-school program in Philadelphia.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A July 2024 Work-Based Learning Alliance internship supporting a converted-bus project for an after-school program in Philadelphia.</p></div><div><h4>My role</h4><p>I led development of CAD drawings, blueprints, and system schematics, and collaborated with a student team on budgeting and component sourcing.</p></div></div>
         <div class="gallery">
           <button class="image-card" data-image="assets/wbla-drawing.png" data-caption="Dimensioned bus layout and exterior drawing">
             <img src="assets/wbla-drawing.png" alt="Dimensioned engineering drawing of the converted bus layout and exterior">
@@ -211,17 +181,9 @@
             <span>CAD assembly</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Contribution</h4>
-            <p>Led development of CAD drawings, blueprints, and system schematics for the bus conversion during my Work-Based Learning Alliance internship.</p>
-          </div>
-          <div>
-            <h4>Collaboration</h4>
-            <p>Used Onshape and Fusion 360 while working with a student team to plan the layout, budget the build, and source components.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I did &amp; how</h4><p>Using Onshape and Fusion 360, I developed the interior layout and assembly documentation. The gallery includes a dimensioned drawing, a top-down layout, and a perspective assembly view.</p></div><div><h4>Why this approach</h4><p>A shared layout and dimensioned drawings let the team discuss component placement and space requirements using the same reference while planning the build and sourcing parts.</p></div><div><h4>Outcome &amp; evidence</h4><p>Produced design documentation for the conversion project. The work shown here is my CAD and planning contribution; the gallery does not establish completion of the physical bus conversion.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="frc-gearbox">
         <div class="project-head">
@@ -231,6 +193,7 @@
           </div>
           <p class="project-summary">A compact dual-motor gearbox assembly modeled for a FIRST Robotics Competition mechanism.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A dual-NEO-motor gearbox CAD assembly for a FIRST Robotics Competition mechanism, developed within a team robotics setting.</p></div><div><h4>My role</h4><p>My contribution shown here is the Onshape assembly: modeling and arranging motors, gears, shafts, spacers, and support plates.</p></div></div>
         <div class="gallery">
           <button class="image-card" data-image="assets/frc-gearbox-assembly.png" data-caption="Complete gearbox assembly">
             <img src="assets/frc-gearbox-assembly.png" alt="Onshape perspective view of the complete NEO motor gearbox assembly">
@@ -245,17 +208,9 @@
             <span>Motor layout</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Design</h4>
-            <p>Modeled the motors, gears, shafts, spacers, and support plates as a complete Onshape assembly.</p>
-          </div>
-          <div>
-            <h4>Packaging</h4>
-            <p>Organized the multi-stage gear train between parallel plates to keep the transmission compact and make component relationships easy to inspect.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I did &amp; how</h4><p>I organized the multi-stage gear train between parallel plates and inspected the complete assembly from perspective, top, and side views.</p></div><div><h4>Why this layout</h4><p>The parallel-plate arrangement keeps the transmission compact and makes the relationships between the motors, gears, shafts, and supports easier to inspect in CAD.</p></div><div><h4>Outcome &amp; evidence</h4><p>Completed the documented CAD assembly. The images show packaging and component relationships; they do not establish a tested gear ratio, output torque, or competition performance.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
 
       <article class="project" id="keyboard">
         <div class="project-head">
@@ -265,6 +220,7 @@
           </div>
           <p class="project-summary">A custom split-keyboard case developed through iterative CAD and 3D-printed prototypes.</p>
         </div>
+<div class="case-overview"><div><h4>Context</h4><p>A custom split-keyboard case project developed in January–March 2025, centered on component fit and individual hand geometry.</p></div><div><h4>My role</h4><p>I modeled the case in Fusion 360 and iterated the enclosure through multiple 3D-printed versions before assembling the keyboard halves.</p></div></div>
         <div class="gallery">
           <button class="image-card" data-image="assets/keyboard-assembled.jpg" data-caption="Assembled split-keyboard prototypes">
             <img src="assets/keyboard-assembled.jpg" alt="Red and blue assembled split ergonomic keyboard halves with white keycaps">
@@ -275,17 +231,9 @@
             <span>Printed cases</span>
           </button>
         </div>
-        <div class="project-details two">
-          <div>
-            <h4>Design</h4>
-            <p>Modeled a custom split ergonomic keyboard case in Fusion 360 around the PCB, key layout, and individual hand geometry.</p>
-          </div>
-          <div>
-            <h4>Iteration</h4>
-            <p>Produced multiple 3D-printed versions to refine component fit, wrist support, and typing comfort before assembling the working halves.</p>
-          </div>
-        </div>
-      </article>
+<div class="project-details case-study"><div><h4>What I built &amp; how</h4><p>I designed around the PCB and key layout, then used physical case iterations to refine component fit and wrist support. The photographs show printed shells and assembled prototypes.</p></div><div><h4>Why prototype physically</h4><p>CAD defines the geometry, but a printed enclosure makes component fit and the relationship to the user’s hands tangible. Typing comfort was a design objective rather than a quantified ergonomic result.</p></div><div><h4>Outcome &amp; evidence</h4><p>Produced assembled split-keyboard prototypes and multiple printed case iterations. The physical builds demonstrate the progression from enclosure design to assembly.</p></div></div>
+<div class="case-actions"><a href="projects.html">← Explore another project</a><a href="mailto:iyersuraj8@gmail.com">Ask me about this project ↗</a></div>
+</article>
     </section>
 
     <section class="about" id="about">
