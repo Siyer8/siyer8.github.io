@@ -98,3 +98,41 @@ dialog?.addEventListener('close', () => {
   document.body.classList.remove('modal-open');
   trigger?.focus({ preventScroll: true });
 });
+
+// Exploded views stay hidden until all their render layers load, so missing renders never show broken images.
+document.querySelectorAll('[data-xv]').forEach(xv => {
+  const layers = Array.from(xv.querySelectorAll('.xv-layer'));
+  const labels = Array.from(xv.querySelectorAll('.xv-label'));
+  const stage = xv.querySelector('.xv-stage');
+  const bar = xv.querySelector('.xv-progress');
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  const isStatic = () => motion.matches || window.matchMedia('(max-width: 800px)').matches;
+  const render = () => {
+    let p = 1;
+    if (!isStatic()) {
+      const rect = xv.getBoundingClientRect();
+      const travel = rect.height - window.innerHeight * 0.75;
+      p = travel > 0 ? Math.min(1, Math.max(0, (window.innerHeight * 0.25 - rect.top) / travel)) : 1;
+    }
+    const scale = stage.clientWidth / 1000;
+    layers.forEach(img => {
+      const e = ease(p) * scale;
+      img.style.transform = `translate3d(${(+img.dataset.dx || 0) * e}px, ${(+img.dataset.dy || 0) * e}px, 0)`;
+    });
+    labels.forEach(label => label.classList.toggle('is-on', p >= (+label.dataset.at || 0.9)));
+    if (bar) bar.style.transform = `scaleX(${p})`;
+  };
+  let pending = false;
+  const schedule = () => {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(() => { pending = false; render(); });
+  };
+  Promise.all(layers.map(img => img.decode())).then(() => {
+    xv.hidden = false;
+    render();
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    window.addEventListener('hashchange', schedule);
+  }).catch(() => {});
+});

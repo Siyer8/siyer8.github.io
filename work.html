@@ -35,7 +35,7 @@
 
     <section class="metrics" aria-label="Portfolio highlights">
       <div><strong>14.8 m/s</strong><span>measured wind-tunnel velocity</span></div>
-      <div><strong>CAD</strong><span>parametric design automation</span></div>
+      <div><strong>3×</strong><span>faster CAD iteration with Python + Fusion 360</span></div>
       <div><strong>7</strong><span>projects spanning hardware and software</span></div>
     </section>
 
@@ -54,6 +54,23 @@
           <p class="project-summary">Designed, fabricated, and instrumented a compact wind tunnel for airflow testing.</p>
         </div>
 <div class="case-overview"><div><h4>Context</h4><p>Undergraduate research at WPI with Prof. Mehdi Mortazavi, focused on building and instrumenting an open-circuit wind tunnel for airflow testing.</p></div><div><h4>My role</h4><p>I developed the tunnel geometry and modular CAD assembly, built the fan-control test rig, and carried out airflow measurements.</p></div></div>
+        <!-- Exploded view: stays hidden until every layer in assets/xv/ loads. Render layers per portfolio README. -->
+        <div class="xv" data-xv hidden style="--project-color:#72ead0">
+          <div class="xv-sticky">
+            <div class="xv-copy"><h4>Exploded view</h4><p>Scroll to separate the modular CAD assembly.</p></div>
+            <div class="xv-stage">
+              <img class="xv-layer" src="assets/xv/wind-1-contraction.webp" data-dx="-260" data-dy="-40" alt="">
+              <img class="xv-layer" src="assets/xv/wind-2-test-section.webp" data-dx="-60" data-dy="50" alt="">
+              <img class="xv-layer" src="assets/xv/wind-3-diffuser.webp" data-dx="170" data-dy="-30" alt="">
+              <img class="xv-layer" src="assets/xv/wind-4-fan.webp" data-dx="260" data-dy="40" alt="">
+              <span class="xv-label" data-at="0.55" style="--x:6%;--y:12%">Contraction cone</span>
+              <span class="xv-label" data-at="0.65" style="--x:36%;--y:80%">Test section · ATS probe</span>
+              <span class="xv-label" data-at="0.75" style="--x:58%;--y:10%">Diffuser</span>
+              <span class="xv-label" data-at="0.85" style="--x:80%;--y:78%">PWM fan + tachometer</span>
+            </div>
+          </div>
+          <div class="xv-progress"></div>
+        </div>
         <div class="gallery gallery-wind">
           <button class="image-card" data-image="assets/wind-5976.jpg" data-caption="Completed wind tunnel on the optical table">
             <img src="assets/wind-5976.jpg" alt="Original photograph of the completed wind tunnel in the laboratory">
@@ -89,7 +106,26 @@
           </div>
           <p class="project-summary">From steel and aluminum stock to a functional engine, with hands-on machining and CAM verification.</p>
         </div>
-<div class="case-overview"><div><h4>Context</h4><p>A hands-on machining project completed in March–May 2025, turning steel and aluminum stock into a functional single-piston engine.</p></div><div><h4>My role</h4><p>I machined the components and assembled the engine, using a manual mill, lathe, and drill press. I also created and verified machining toolpaths in Mastercam.</p></div></div>
+<div class="case-overview"><div><h4>Context</h4><p>A hands-on machining project completed in March–May 2025, turning steel and aluminum stock into a functional single-piston engine.</p></div><div><h4>My role</h4><p>I machined the components and assembled the engine, using a CNC, lathe, and drill press. I also created and verified machining toolpaths in Mastercam.</p></div></div>
+        <!-- Exploded view along the cylinder axis. Rename layers/labels to match the actual parts. -->
+        <div class="xv" data-xv hidden style="--project-color:#ffbf7b">
+          <div class="xv-sticky">
+            <div class="xv-copy"><h4>Exploded view</h4><p>Scroll to take the engine apart, part by part.</p></div>
+            <div class="xv-stage">
+              <img class="xv-layer" src="assets/xv/engine-1-base.webp" data-dx="0" data-dy="230" alt="">
+              <img class="xv-layer" src="assets/xv/engine-2-crankshaft.webp" data-dx="-260" data-dy="130" alt="">
+              <img class="xv-layer" src="assets/xv/engine-3-conrod.webp" data-dx="220" data-dy="30" alt="">
+              <img class="xv-layer" src="assets/xv/engine-4-piston.webp" data-dx="0" data-dy="-90" alt="">
+              <img class="xv-layer" src="assets/xv/engine-5-cylinder.webp" data-dx="0" data-dy="-230" alt="">
+              <span class="xv-label" data-at="0.55" style="--x:56%;--y:88%">Base</span>
+              <span class="xv-label" data-at="0.65" style="--x:4%;--y:66%">Crankshaft</span>
+              <span class="xv-label" data-at="0.7" style="--x:74%;--y:48%">Connecting rod</span>
+              <span class="xv-label" data-at="0.75" style="--x:58%;--y:30%">Piston</span>
+              <span class="xv-label" data-at="0.85" style="--x:58%;--y:6%">Cylinder</span>
+            </div>
+          </div>
+          <div class="xv-progress"></div>
+        </div>
         <div class="gallery gallery-engine">
           <button class="image-card hero-card" data-image="assets/engine-complete.jpg" data-caption="Completed single-piston engine">
             <img src="assets/engine-complete.jpg" alt="Completed machined single-piston engine">
@@ -242,7 +278,7 @@
         <h2>Curious about how things fit together—and how to make them work better.</h2>
       </div>
       <div class="about-copy">
-        <p>I’m pursuing a B.S. in Mechanical Engineering at Worcester Polytechnic Institute. I’m most engaged when a project moves between analysis, CAD, fabrication, testing, and iteration.</p>
+        <p>I’m studying Mechanical Engineering at Worcester Polytechnic Institute. I’m most engaged when a project moves between analysis, CAD, fabrication, testing, and iteration.</p>
         <p>Outside the lab, I play piano, take long walks, and build LEGO sets—different ways of slowing down, noticing details, and making something piece by piece.</p>
         <div class="contact-row">
           <a href="mailto:iyersuraj8@gmail.com">iyersuraj8@gmail.com</a>

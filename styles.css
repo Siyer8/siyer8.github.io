@@ -65,3 +65,15 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{font-weight:600;line-height:1.05;letter-spac
 .case-actions{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);color:#a6b8ff;font-size:.9rem}
 .availability{display:inline-block;color:var(--accent);font-size:.9rem;border-left:2px solid var(--accent);padding-left:1rem;margin-bottom:2rem}
 @media(max-width:800px){.case-overview,.project-details.case-study{grid-template-columns:1fr;gap:1.5rem}}
+
+/* Scroll-scrubbed exploded views: a sticky stage of same-camera render layers. */
+.xv{position:relative;overflow:clip;height:220vh;margin:0 0 2rem;border:1px solid var(--line);border-radius:14px;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/40px 40px,var(--panel)}
+.xv-sticky{position:sticky;top:5rem;height:calc(100vh - 6rem);display:grid;grid-template-columns:minmax(0,1fr) 3fr;gap:2rem;align-items:center;padding:1.5rem}
+.xv-copy h4{color:var(--project-color)}.xv-copy p{color:var(--muted);font-size:.95rem;margin:0}
+.xv-stage{position:relative;width:100%;aspect-ratio:16/10;max-height:100%}
+.xv-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;will-change:transform;filter:drop-shadow(0 18px 28px #0007)}
+.xv-label{position:absolute;left:var(--x);top:var(--y);padding:.3rem .6rem;border-left:2px solid var(--project-color);background:#101216d9;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s;pointer-events:none}
+.xv-label.is-on{opacity:1;transform:none}
+.xv-progress{position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--project-color);transform-origin:left;transform:scaleX(0)}
+@media(max-width:800px){.xv{height:auto}.xv-sticky{position:static;height:auto;grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.xv{height:auto}.xv-sticky{position:static;height:auto}}
